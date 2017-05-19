@@ -8,7 +8,7 @@
 
 		public function getstaff()
 		{
-			$query = $this->db->query('select * from employee inner join department on employee.d_id=department.d_id');
+			$query = $this->db->query('select * from (employee inner join position  on employee.pid=position.pid) inner join department on employee.d_id = department.d_id');
 			return $query->result();
 		}
 
@@ -20,9 +20,11 @@
 
 		public function getNew_Staff_Num()
 		{
-			$query = $this->db->query('select count(*) as n_num from employee where year=2017');
+			$query = $this->db->query('select count(*) as n_num from employee where left(indate,4) = 2017');
 			return $query->row();
 		}
+
+		
 
 	}
  ?>

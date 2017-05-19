@@ -4,8 +4,11 @@
 	class Controller1 extends CI_Controller
 	{
 
+ 	
+
 		public function getDBview()
 		{
+
 			$this->load->model('SQLmodel','',TRUE);
 			$data['staff'] = $this->SQLmodel->getstaff();
 			$data['noe'] = $this->SQLmodel->getNumber_Of_Employees();
@@ -13,5 +16,18 @@
 			$this->load->helper('url');
 			$this->load->view('myviews/index',$data);
 		}
+
+		public function table()
+		{
+					$this->load->helper('url');
+
+			redirect('/Op_Controller/table');
+			
+		}
+
+		
+
+			
 	}	
+
  ?>

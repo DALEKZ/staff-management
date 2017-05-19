@@ -6,19 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Helsinki</title>
-    <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>/static/favicon/apple-icon-120x120.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?=base_url()?>/static/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>/static/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url()?>/static/favicon/favicon-16x16.png">
-    <link rel="stylesheet" type="text/css" href="<?=base_url()?>/static/stylesheets/css/bootstrap.css">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?=base_url()?>/static/vendor/animate.css/animate.css">
-    <link rel="stylesheet" href="<?=base_url()?>/static/vendor/toastr/toastr.min.css">
-    <link rel="stylesheet" href="<?=base_url()?>/static/vendor/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="<?=base_url()?>/static/stylesheets/css/style.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="stylesheets/css/style.css">
 </head>
 
 <body>
+
      
 
 
@@ -27,7 +26,7 @@
         <div class="leftside-header">
             <div class="logo">
                 <a href="index.html" class="on-click">
-                    <img alt="logo" src="<?=base_url()?>/static/images/header-logo.png" />
+                    <img alt="logo" src="images/header-logo.png" />
                 </a>
             </div>
             <div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
@@ -102,7 +101,7 @@
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <div class="left-element"><img alt="John Doe" src="<?=base_url()?>/static/images/avatar_1.jpg" /></div>
+                                            <div class="left-element"><img alt="John Doe" src="images/avatar_1.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">John Doe</span>
                                                 <span class="subtitle">Lorem ipsum dolor sit.</span>
@@ -111,7 +110,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="left-element"><img alt="Alice Smith" src="<?=base_url()?>/static/images/avatar_2.jpg" /></div>
+                                            <div class="left-element"><img alt="Alice Smith" src="images/avatar_2.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">Alice Smith</span>
                                                 <span class="subtitle">Deserunt, mollitia?</span>
@@ -120,7 +119,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="left-element"><img alt="Klaus Wolf" src="<?=base_url()?>/static/images/avatar_3.jpg" /></div>
+                                            <div class="left-element"><img alt="Klaus Wolf" src="images/avatar_3.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">Klaus Wolf</span>
                                                 <span class="subtitle">Consectetur adipisicing elit.</span>
@@ -129,7 +128,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="left-element"><img alt="Sun Li" src="<?=base_url()?>/static/images/avatar_4.jpg" /></div>
+                                            <div class="left-element"><img alt="Sun Li" src="images/avatar_4.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">Sun Li</span>
                                                 <span class="subtitle">Tenetur tempora?</span>
@@ -138,7 +137,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="left-element"><img alt="Sonia Valera" src="<?=base_url()?>/static/images/avatar_5.jpg" /></div>
+                                            <div class="left-element"><img alt="Sonia Valera" src="images/avatar_5.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">Sonia Valera</span>
                                                 <span class="subtitle">Similique ad maxime.</span>
@@ -222,7 +221,7 @@
             <div class="header-section" id="user-headerbox">
                 <div class="user-header-wrap">
                     <div class="user-photo">
-                        <img src="<?=base_url()?>/static/images/user-avatar.jpg" alt="Jane Doe" />
+                        <img src="images/user-avatar.jpg" alt="Jane Doe" />
                     </div>
                     <div class="user-info">
                         <span class="user-name">Jane Doe</span>
@@ -247,7 +246,6 @@
             </div>
         </div>
     </div>
-
     <div class="page-body">
         <div class="left-sidebar">
             <div class="left-sidebar-header">
@@ -256,8 +254,7 @@
                     <span></span>
                 </div>
             </div>
-            <?php include 'left_nav.php' ?>
-            <!-- <div id="left-nav" class="nano">
+            <div id="left-nav" class="nano">
                 <div class="nano-content">
                     <nav>
                         <ul class="nav" id="main-nav">
@@ -298,12 +295,12 @@
                                     <li><a href="forms_validation.html">Validation</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item open-item active-item">
+                            <li class="has-child-item close-item">
                                 <a><i class="fa fa-table" aria-hidden="true"></i><span>Tables</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="tables_basic.html">Basic</a></li>
                                     <li><a href="tables_data-tables.html">DataTable</a></li>
-                                    <li class="active-item"><a href="tables_responsive.html">Responsive</a></li>
+                                    <li><a href="tables_responsive.html">Responsive</a></li>
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
@@ -324,13 +321,13 @@
                                     <li><a href="pages_user-profile.html">User profile</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item close-item">
+                            <li class="has-child-item open-item active-item">
                                 <a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>Widgets</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="widgets_boxes.html">Boxes</a></li>
                                     <li><a href="widgets_lists.html">Lists</a></li>
                                     <li><a href="widgets_posts.html">Posts</a></li>
-                                    <li><a href="widgets_timelines.html">Timelines</a></li>
+                                    <li class="active-item"><a href="widgets_timelines.html">Timelines</a></li>
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
@@ -382,64 +379,213 @@
                             </li>
                         </ul>
                     </nav>
-                </div> -->
+                </div>
             </div>
         </div>
         <div class="content">
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-table" aria-hidden="true"></i><a href="#">Tables</a></li>
-                        <li><a>Responsive</a></li>
+                        <li><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="#">Widgets</a></li>
+                        <li><a>Timeline</a></li>
                     </ul>
                 </div>
             </div>
+            <h4 class="section-subtitle mb-xlg"><b>Left side</b> Timeline</h4>
             <div class="row animated fadeInRight">
-               
-              
-                <div class="col-sm-12">
-                    <h4 class="section-subtitle">
-                    <div class="panel">
-                        <div class="panel-content">
-                            <table id="responsive-table" class="data-table table table-striped table-hover responsive nowrap" cellspacing="0" width="100%">
-                                <thead>
-                                <tr>
-                                    <th>员工号</th>
-                                    <th>姓名</th>
-                                    <th>性别</th>
-                                    <th>职位</th>
-                                    <th>部门</th>
-                                    <th>工资</th>
-                                    <th>入职时间</th>
-                                    <th>操作</th>
-
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <?php foreach ($staff as $row) { ?>
-                                    <tr>
-                                        <td><?php echo $row->eid; ?></td>
-                                        <td><?php echo $row->name ;?></td>
-                                        <td><?php echo $row->sex; ?></td>
-                                        <td><?php echo $row->p_name; ?></td>
-                                        <td><?php echo $row->d_name ;?></td>
-                                        <td><?php echo $row->age;?></td>
-                                        <td><?php echo $row->indate;?></td>
-                                        <td>
-                                            <div class="btn-group btn-group-xs">
-                                                <button class="btn btn-transparent"><i class="fa fa-eye"></i>
-                                                </button>
-                                                <button class="btn btn-transparent"><i class="fa fa-pencil"></i>
-                                                </button>
-                                                <button class="btn btn-transparent"><i class="fa fa-times"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php } ?>
-                            
-                                </tbody>
-                            </table>
+                <div class="col-md-8">
+                    <div class="timeline">
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Ello impedit iusto</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 14:25</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-tasks"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">consectetur adipisicing </h4> Lorem ipsum dolor sit amet. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 10:55</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Impedit iusto minima nisi</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 9:20</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Lorem ipsum dolor sit</h4> Lorem ipsum dolor sit amet Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Yesteday. 16:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="timeline">
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Ello impedit iusto</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 14:25</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-tasks"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">consectetur adipisicing </h4> Lorem ipsum dolor sit amet. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 10:55</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Impedit iusto minima nisi</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 9:20</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Lorem ipsum dolor sit</h4> Lorem ipsum dolor sit amet Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Yesteday. 16:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="section-subtitle "><b>Right side</b> Timeline</h4>
+            <p class="section-text">Add the class <span class="code">tl-right</span> and it will change the timeline to the right side</p>
+            <div class="row animated fadeInRight">
+                <div class="col-md-8">
+                    <div class="timeline tl-right">
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Ello impedit iusto</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 14:25</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-tasks"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">consectetur adipisicing </h4> Lorem ipsum dolor sit amet. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 10:55</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Impedit iusto minima nisi</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 9:20</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Lorem ipsum dolor sit</h4> Lorem ipsum dolor sit amet Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Yesteday. 16:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="timeline tl-right">
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Ello impedit iusto</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 14:25</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-tasks"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">consectetur adipisicing </h4> Lorem ipsum dolor sit amet. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 10:55</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Impedit iusto minima nisi</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 9:20</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Lorem ipsum dolor sit</h4> Lorem ipsum dolor sit amet Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Yesteday. 16:30</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -486,16 +632,16 @@
                         <h4 class="text-center">Template Colors</h4>
                         <ul class="toggle-colors">
                             <li>
-                                <a href="index.html" class="on-click"> <img alt="Helsinki-green" src="<?=base_url()?>/static/images/helsinki-green.png" /></a>
+                                <a href="index.html" class="on-click"> <img alt="Helsinki-green" src="images/helsinki-green.png" /></a>
                             </li>
                             <li>
-                                <a href="../helsinki-light/index.html" class="on-click"> <img alt="Helsinki-light" src="<?=base_url()?>/static/images/helsinki-light.png" /></a>
+                                <a href="../helsinki-light/index.html" class="on-click"> <img alt="Helsinki-light" src="images/helsinki-light.png" /></a>
                             </li>
                             <li>
-                                <a href="../helsinki-blue/index.html" class="on-click"> <img alt="Helsinki-blue" src="<?=base_url()?>/static/images/helsinki-blue.png" /></a>
+                                <a href="../helsinki-blue/index.html" class="on-click"> <img alt="Helsinki-blue" src="images/helsinki-blue.png" /></a>
                             </li>
                             <li>
-                                <a href="../helsinki-red/index.html" class="on-click"> <img alt="Helsinki-red" src="<?=base_url()?>/static/images/helsinki-red.png" /></a>
+                                <a href="../helsinki-red/index.html" class="on-click"> <img alt="Helsinki-red" src="images/helsinki-red.png" /></a>
                             </li>
                         </ul>
                     </div>
@@ -506,16 +652,11 @@
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script src="<?=base_url()?>/static/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/nano-scroller/nano-scroller.js"></script>
-<script src="<?=base_url()?>/static/javascripts/template-script.min.js"></script>
-<script src="<?=base_url()?>/static/javascripts/template-init.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/media/js/jquery.dataTables.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/extensions/Responsive/js/dataTables.responsive.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
-<script src="<?=base_url()?>/static/javascripts/examples/tables/data-tables.js"></script>
+<script src="javascripts/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/nano-scroller/nano-scroller.js"></script>
+<script src="javascripts/template-script.min.js"></script>
+<script src="javascripts/template-init.min.js"></script>
 </body>
 
 </html>

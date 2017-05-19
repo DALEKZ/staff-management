@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Helsinki</title>
-    <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>/static/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>/static/favicon/apple-icon-120x120.png">
     <link rel="icon" type="image/png" sizes="192x192" href="<?=base_url()?>/static/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>/static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url()?>/static/favicon/favicon-16x16.png">
@@ -19,8 +19,8 @@
 </head>
 
 <body>
-     
 
+     
 
 <div class="wrap">
     <div class="page-header">
@@ -256,190 +256,167 @@
                     <span></span>
                 </div>
             </div>
-            <?php include 'left_nav.php' ?>
-            <!-- <div id="left-nav" class="nano">
-                <div class="nano-content">
-                    <nav>
-                        <ul class="nav" id="main-nav">
-                            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Dashboard</span></a></li>
-                            <li class="has-child-item close-item">
-                                <a><i class="fa fa-cubes" aria-hidden="true"></i><span>UI Elements</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="ui-elements_panels.html">Panels</a></li>
-                                    <li><a href="ui-elements_accordions.html">Accordions</a></li>
-                                    <li><a href="ui-elements_tabs.html">Tabs</a></li>
-                                    <li><a href="ui-elements_buttons.html">Buttons</a></li>
-                                    <li><a href="ui-elements_typography.html">Typography</a></li>
-                                    <li><a href="ui-elements_alerts.html">Alerts</a></li>
-                                    <li><a href="ui-elements_modals.html">Modals</a></li>
-                                    <li class="has-child-item close-item">
-                                        <a>Notifications</a>
-                                        <ul class="nav child-nav level-2 ">
-                                            <li><a href="ui-elements_notifications-pnotify.html">PNotify</a></li>
-                                            <li><a href="ui-elements_notifications-toastr.html">Toastr</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="ui-elements_animations-appear.html">Animations</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-child-item close-item">
-                                <a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>Charts</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="charts_chart-js.html">CharJS</a></li>
-                                    <li><a href="charts_morris.html">Morris</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-child-item close-item">
-                                <a><i class="fa fa-columns" aria-hidden="true"></i><span>Forms</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="forms_layouts.html">Layouts</a></li>
-                                    <li><a href="forms_elements.html">Elements</a></li>
-                                    <li><a href="forms_advanced.html">Advanced</a></li>
-                                    <li><a href="forms_validation.html">Validation</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-child-item open-item active-item">
-                                <a><i class="fa fa-table" aria-hidden="true"></i><span>Tables</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="tables_basic.html">Basic</a></li>
-                                    <li><a href="tables_data-tables.html">DataTable</a></li>
-                                    <li class="active-item"><a href="tables_responsive.html">Responsive</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-child-item close-item">
-                                <a><i class="fa fa-files-o" aria-hidden="true"></i><span>Pages</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="pages_sign-in.html">Sign in</a></li>
-                                    <li><a href="pages_lock-screen.html">Lock screen</a></li>
-                                    <li><a href="pages_forgot-password.html">Forgot password</a></li>
-                                    <li class="has-child-item close-item">
-                                        <a>Error pages</a>
-                                        <ul class="nav child-nav level-2 ">
-                                            <li><a href="pages_error-404-content.html">Error 404 content</a></li>
-                                            <li><a href="pages_error-404.html">Error 404 page</a></li>
-                                            <li><a href="pages_error-500.html">Error 500</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="pages_faq.html">FAQ</a></li>
-                                    <li><a href="pages_user-profile.html">User profile</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-child-item close-item">
-                                <a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>Widgets</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="widgets_boxes.html">Boxes</a></li>
-                                    <li><a href="widgets_lists.html">Lists</a></li>
-                                    <li><a href="widgets_posts.html">Posts</a></li>
-                                    <li><a href="widgets_timelines.html">Timelines</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-child-item close-item">
-                                <a><i class="fa fa-magic" aria-hidden="true"></i><span>Helpers</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="helpers_background-border.html">Background & Border</a></li>
-                                    <li><a href="helpers_margin-padding.html">Margin & Padding</a></li>
-                                </ul>
-                            </li>
-                            <li class=" has-child-item close-item">
-                                <a>
-                                    <i class="fa fa-sitemap" aria-hidden="true"></i>
-                                    <span>Menu levels</span>
-                                </a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a>First Item</a></li>
-                                    <li class="has-child-item close-item">
-                                        <a>Second Item</a>
-                                        <ul class="nav child-nav level-2 ">
-                                            <li><a href="#">Option 1</a></li>
-                                            <li><a href="#">Option 2</a></li>
-                                            <li class="has-child-item close-item">
-                                                <a>Option 3</a>
-                                                <ul class="nav child-nav level-3 ">
-                                                    <li><a href="#">Item 1</a></li>
-                                                    <li><a href="#">Item 2</a></li>
-                                                    <li><a href="#">Item 3</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a>Third Item</a></li>
-                                    <li class="has-child-item close-item">
-                                        <a>Fourth Item</a>
-                                        <ul class="nav child-nav level-2 ">
-                                            <li><a href="#">Option 1</a></li>
-                                            <li><a href="#">Option 2</a></li>
-                                            <li class="has-child-item close-item">
-                                                <a>Option 3</a>
-                                                <ul class="nav child-nav level-3 ">
-                                                    <li><a href="#">Item 1</a></li>
-                                                    <li><a href="#">Item 2</a></li>
-                                                    <li><a href="#">Item 3</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div> -->
+                <?php include 'left_nav.php' ?>
             </div>
         </div>
         <div class="content">
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-table" aria-hidden="true"></i><a href="#">Tables</a></li>
-                        <li><a>Responsive</a></li>
+                        <li><i class="fa fa-copy" aria-hidden="true"></i><a href="#">Pages</a></li>
+                        <li><a>User profile</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row animated fadeInRight">
-               
-              
-                <div class="col-sm-12">
-                    <h4 class="section-subtitle">
-                    <div class="panel">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div>
+                        <div class="profile-photo">
+                            <img alt="Jane Doe" src="<?=base_url()?>/static/images/user-avatar.jpg" />
+                        </div>
+                        <div class="user-header-info">
+                            <h2 class="user-name">Jane Doe</h2>
+                            <h5 class="user-position">UI Designer</h5>
+                            <div class="user-social-media">
+                                <span class="text-lg"><a href="#" class="fa fa-twitter-square"></a> <a href="#" class="fa fa-facebook-square"></a> <a href="#" class="fa fa-linkedin-square"></a> <a href="#" class="fa fa-google-plus-square"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel bg-scale-0 b-primary bt-sm mt-xl">
                         <div class="panel-content">
-                            <table id="responsive-table" class="data-table table table-striped table-hover responsive nowrap" cellspacing="0" width="100%">
-                                <thead>
-                                <tr>
-                                    <th>员工号</th>
-                                    <th>姓名</th>
-                                    <th>性别</th>
-                                    <th>职位</th>
-                                    <th>部门</th>
-                                    <th>工资</th>
-                                    <th>入职时间</th>
-                                    <th>操作</th>
-
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <?php foreach ($staff as $row) { ?>
-                                    <tr>
-                                        <td><?php echo $row->eid; ?></td>
-                                        <td><?php echo $row->name ;?></td>
-                                        <td><?php echo $row->sex; ?></td>
-                                        <td><?php echo $row->p_name; ?></td>
-                                        <td><?php echo $row->d_name ;?></td>
-                                        <td><?php echo $row->age;?></td>
-                                        <td><?php echo $row->indate;?></td>
-                                        <td>
-                                            <div class="btn-group btn-group-xs">
-                                                <button class="btn btn-transparent"><i class="fa fa-eye"></i>
-                                                </button>
-                                                <button class="btn btn-transparent"><i class="fa fa-pencil"></i>
-                                                </button>
-                                                <button class="btn btn-transparent"><i class="fa fa-times"></i>
-                                                </button>
+                            <h4 class=""><b>Contact Information</b></h4>
+                            <ul class="user-contact-info ph-sm">
+                                <li><b><i class="color-primary mr-sm fa fa-envelope"></i></b> jane-doe@email.com</li>
+                                <li><b><i class="color-primary mr-sm fa fa-phone"></i></b> (023) 234 2344</li>
+                                <li><b><i class="color-primary mr-sm fa fa-globe"></i></b> Helsinki, Finland</li>
+                                <li class="mt-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolorem error itaque maxime minus saepe similique voluptatibus. Beatae cumque dolore doloribus impedit omnis porro tempore tenetur. Aperiam dolorum odio quo?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel  b-primary bt-sm ">
+                        <div class="panel-content">
+                            <div class="widget-list list-sm list-left-element ">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="left-element"><i class="fa fa-check color-success"></i></div>
+                                            <div class="text">
+                                                <span class="title">95 Jobs</span>
+                                                <span class="subtitle">Completed</span>
                                             </div>
-                                        </td>
-                                    </tr>
-                                <?php } ?>
-                            
-                                </tbody>
-                            </table>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="left-element"><i class="fa fa-clock-o color-warning"></i></div>
+                                            <div class="text">
+                                                <span class="title">3 Proyects</span>
+                                                <span class="subtitle">working on</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="left-element"><i class="fa fa-envelope color-primary"></i></div>
+                                            <div class="text">
+                                                <span class="title">Leave a Menssage</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <div class="timeline animated fadeInUp">
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Ello impedit iusto</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 14:25</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-tasks"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">consectetur adipisicing </h4> Lorem ipsum dolor sit amet. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 10:55</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Impedit iusto minima nisi</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Today. 9:20</span>
+                            </div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-icon bg-primary">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4 class="tl-title">Lorem ipsum dolor sit</h4> Lorem ipsum dolor sit amet Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
+                            </div>
+                            <div class="timeline-footer">
+                                <span>Yesteday. 16:30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" gallery-wrap">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="first photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="second photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="third photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="fourth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="fifth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="sixth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="seventh photo" src="images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="images/helsinki-lg.jpg" title="By John Doe">
+                                    <img alt="eighth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -503,19 +480,36 @@
             </div>
         </div>
 
+
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="<?=base_url()?>/static/javascripts/jquery.min.js"></script>
 <script src="<?=base_url()?>/static/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?=base_url()?>/static/vendor/nano-scroller/nano-scroller.js"></script>
 <script src="<?=base_url()?>/static/javascripts/template-script.min.js"></script>
 <script src="<?=base_url()?>/static/javascripts/template-init.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/media/js/jquery.dataTables.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/extensions/Responsive/js/dataTables.responsive.min.js"></script>
-<script src="<?=base_url()?>/static/vendor/data-table/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
-<script src="<?=base_url()?>/static/javascripts/examples/tables/data-tables.js"></script>
+<script src="<?=base_url()?>/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script>
+    //MAGNIFIC POPUP GALLERY
+    $(function() {
+        $('.gallery-wrap').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1]
+            },
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-no-margins mfp-with-zoom',
+            zoom: {
+                enabled: true,
+                duration: 300
+            }
+        });
+    });
+</script>
 </body>
 
 </html>

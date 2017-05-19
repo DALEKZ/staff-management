@@ -402,7 +402,7 @@
                                             </div>
                                             <div class="col-xs-8">
                                                 <h4 class="subtitle color-darker-1">员工数</h4>
-                                                <h1 class="title color-primary"> 154.609</h1>
+                                                <h1 class="title color-primary"><?php echo $noe->num ?></h1>
                                             </div>
                                         </div>
                                     </div>
@@ -417,7 +417,7 @@
                                             </div>
                                             <div class="col-xs-8">
                                                 <h4 class="subtitle color-darker-2">当年新入职人数</h4>
-                                                <h1 class="title color-w"> 105</h1>
+                                                <h1 class="title color-w"> <?php echo $non->n_num ?></h1>
                                             </div>
                                         </div>
                                     </div>
@@ -518,54 +518,22 @@
                                                     <th>职位</th>
                                                     <th>部门</th>
                                                     <th>年龄</th>
+                                                    <th>入职年份</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
+                                                <?php foreach ($staff as $row) { ?>
                                                 <tr>
-                                                    <td>000</td>
-                                                    <td>男</td>
-                                                    <td>Olivia Liang</td>
-                                                    <td>Support Engineer</td>
-                                                    <td>Singapore</td>
-                                                    <td>34</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>000</td>
-                                                                                                        <td>男</td>
+                                                    <td><?php echo $row->eid; ?></td>
+                                                    <td><?php echo $row->name ;?></td>
+                                                    <td><?php echo $row->sex; ?></td>
+                                                    <td><?php echo $row->position; ?></td>
+                                                    <td><?php echo $row->d_name ;?></td>
+                                                    <td><?php echo $row->age;?></td>
+                                                    <td><?php echo $row->year;?></td>
 
-                                                    <td>Bruno Nash</td>
-                                                    <td>Software Engineer</td>
-                                                    <td>London</td>
-                                                    <td>38</td>
                                                 </tr>
-                                                <tr>
-
-                                                    <td>000</td>
-                                                                                                        <td>男</td>
-
-                                                    <td>Sakura Yamamoto</td>
-                                                    <td>Support Engineer</td>
-                                                    <td>Tokyo</td>
-                                                    <td>37</td>
-                                                </tr>
-                                                <tr>
-                                                                                                    <td>000</td>
-                                                    <td>男</td>
-
-                                                    <td>Michael Bruce</td>
-                                                    <td>Javascript Developer</td>
-                                                    <td>Singapore</td>
-                                                    <td>29</td>
-                                                </tr>
-                                                <tr>
-                                                                                                    <td>000</td>
-                                                    <td>男</td>
-
-                                                    <td>Donna Snider</td>
-                                                    <td>Customer Support</td>
-                                                    <td>New York</td>
-                                                    <td>27</td>
-                                                </tr>
+                                                <?php } ?>
                                                 </tbody>
                                             </table>
                                         </div>

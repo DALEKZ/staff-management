@@ -20,7 +20,7 @@
 
 		public function getNew_Staff_Num()
 		{
-			$query = $this->db->query('select count(*) as n_num from employee where left(indate,4) = 2017');
+			$query = $this->db->query('select count(*) as n_num from employee where right(indate,4) = 2017');
 			return $query->row();
 		}
 

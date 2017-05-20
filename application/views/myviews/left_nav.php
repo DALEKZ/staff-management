@@ -33,7 +33,7 @@
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-columns" aria-hidden="true"></i><span>表单</span></a>
                                 <ul class="nav child-nav level-1">
-                                    <li><a href="forms_layouts.html">Layouts</a></li>
+                                    <li><a href="form">人员增加</a></li>
                                     <li><a href="forms_elements.html">Elements</a></li>
                                     <li><a href="forms_advanced.html">Advanced</a></li>
                                     <li><a href="forms_validation.html">Validation</a></li>

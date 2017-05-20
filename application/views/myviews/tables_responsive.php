@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Helsinki</title>
-   <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>/static/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>/static/favicon/apple-icon-120x120.png">
     <link rel="icon" type="image/png" sizes="192x192" href="<?=base_url()?>/static/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>/static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url()?>/static/favicon/favicon-16x16.png">
@@ -21,8 +21,8 @@
 <body>
      
 
-
 <div class="wrap">
+
    <?php include 'header.php' ?>
 
     <div class="page-body">
@@ -66,6 +66,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+
                                 <?php foreach ($staff as $row) { ?>
                                     <tr>
                                         <td><?php echo $row->eid; ?></td>
@@ -81,7 +82,7 @@
                                                 </a>
                                                 <a class="btn btn-transparent" href="table"><i class="fa fa-pencil"></i>
                                                 </a>
-                                                <a class="btn btn-transparent" href="delete"><i class="fa fa-times"></i>
+                                                <a class="btn btn-transparent" href="delete/<?=$row->eid?>"><i class="fa fa-times"></i>
                                                 </a>
                                             </div>
                                         </td>
@@ -156,6 +157,7 @@
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
+
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <script src="<?=base_url()?>/static/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?=base_url()?>/static/vendor/nano-scroller/nano-scroller.js"></script>

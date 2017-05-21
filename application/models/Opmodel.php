@@ -37,7 +37,16 @@ class Opmodel extends CI_Model
 	{
 
 	}
-
+	public function getprofile($id)
+	{
+		$data = $this->db->query('select  employee.eid,name,age,sex,d_name,p_name,phone,email,introduce from ((
+							employee inner join position  
+							on employee.pid=position.pid) 
+							inner join department on employee.d_id = department.d_id)
+							INNER JOIN info on employee.eid=info.eid
+							where employee.eid='.$id);
+		return $data -> row();
+	}
 
 }
 ?>

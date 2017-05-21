@@ -5,7 +5,6 @@
 	{
 		function _construct()
 		{
-			$this->load->helper('url');
 			 parent::__construct();
 		}
 
@@ -29,7 +28,18 @@
 			$this->load->model('Opmodel','',TRUE);
 			$this->Opmodel->add($new);
 		}	
+
+		public function getprofile($id)
+		{
+			$this->load->helper('url');
+			$this->load->model('Opmodel','',TRUE);
+			$data = $this->Opmodel->getprofile($id);
+			$this->load->view('myviews/profile',$data);
+			
+
+		}
+
 			
 	}	
 
- ?>
+ ?>		

@@ -6,14 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Helsinki</title>
-    <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>/static/favicon/apple-icon-120x120.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?=base_url()?>/static/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>/static/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url()?>/static/favicon/favicon-16x16.png">
+    <base href="<?=base_url()?>" />
+    <link rel="apple-touch-icon" sizes="120x120" href="static/favicon/apple-icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=base_url()?>/static/vendor/animate.css/animate.css">
-    <link rel="stylesheet" href="<?=base_url()?>/static/stylesheets/css/style.css">
+    <link rel="stylesheet" href="static/stylesheets/css/style.css">
     <link rel="stylesheet" href="<?=base_url()?>/static/vendor/animate.css/animate.css">
     <link rel="stylesheet" href="<?=base_url()?>/static/vendor/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?=base_url()?>/static/vendor/select2/css/select2-bootstrap.min.css">
@@ -99,42 +100,124 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="cofirmation" class="col-sm-3 control-label">职位<span class="required">*</span></label>
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="position" name="position" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
                                             <label for="cofirmation" class="col-sm-3 control-label">部门<span class="required">*</span></label>
-                                            <div class="col-sm-5">
-                                            <div class="radio">
+                                                <div class="col-sm-5">
+                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="1">董事会
+                                                        <input type="radio" name="department" id="department" value="1"  onclick="switchItem('1')">董事会
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="2" >市场部
+                                                        <input type="radio" name="department" id="department" value="2"  onclick="switchItem('2')" >市场部
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="3">研发部
+                                                        <input type="radio" name="department" id="department" value="3"  onclick="switchItem('3')">研发部
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="4">营销部
+                                                        <input type="radio" name="department" id="department" value="4"  onclick="switchItem('4')">营销部
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="5">网络部
+                                                        <input type="radio" name="department" id="department" value="5"  onclick="switchItem('5')">网络部
                                                     </label>
                                                 </div>
                 
+                                             </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cofirmation" class="col-sm-3 control-label">职位<span class="required">*</span></label>
+                                           
+                                            <div id="s1" style="display:none">
+                                                <div class="col-sm-5">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="1" >CEO
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="2">CFO
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="3">CYO
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="4">执行董事
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="s2" style="display:none">
+                                                <div class="col-sm-5">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="5" >市场主管
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="6">交易员
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div id="s3" style="display:none">
+                                                <div class="col-sm-5">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="7" >研发主管
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="8">研发工程师
+                                                        </label>                                               
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div id="s4" style="display:none">
+                                                <div class="col-sm-5">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="9" >营销主管
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="11" >销售员
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div id="s5" style="display:none">
+                                               <div class="col-sm-5">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="position" id="position" value="10" >网络安全分析师
+                                                        </label>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="form-group">
                                             <label for="age" class="col-sm-3 control-label">起薪<span class="required">*</span></label>
                                             <div class="col-sm-6">
@@ -322,6 +405,8 @@
 <script src="<?=base_url()?>/static/vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
 <script src="<?=base_url()?>/static/vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
 <script src="<?=base_url()?>/static/javascripts/examples/forms/advanced.js"></script>
+<script src="<?=base_url()?>/static/javascripts/my_js.js"></script>
+
 </body>
 
 </html>

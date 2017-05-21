@@ -78,11 +78,11 @@
                                         <td><?php echo $row->indate;?></td>
                                         <td>
                                             <div class="btn-group btn-group-xs">
-                                                <a class="btn btn-transparent" href=""><i class="fa fa-eye"></i>
+                                                <a class="btn btn-transparent" href="<?php echo 'index.php/Op_Controller/getprofile/'.$row->eid;?>"> <i class="fa fa-eye"></i>
                                                 </a>
-                                                <a class="btn btn-transparent" href="table"><i class="fa fa-pencil"></i>
+                                                <a class="btn btn-transparent" href="table"> <i class="fa fa-pencil"></i>
                                                 </a>
-                                                <a class="btn btn-transparent" href="delete/<?=$row->eid?>"><i class="fa fa-times"></i>
+                                                <a class="btn btn-transparent" href="<?php echo 'index.php/Op_Controller/delete/'.$row->eid;?>"><i class="fa fa-times"></i>
                                                 </a>
                                             </div>
                                         </td>

@@ -70,7 +70,7 @@
                     <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
                     <div class="dropdown-box basic">
                         <div class="drop-header ">
-                            <h3><i class="fa fa-comments-o" aria-hidden="true"></i> Messages</h3>
+                            <h3><i class="fa fa-comments-o" aria-hidden="true"></i> 消息</h3>
                             <span class="number">120</span>
                         </div>
                         <div class="drop-content">
@@ -81,7 +81,7 @@
                                             <div class="left-element"><img alt="John Doe" src="<?=base_url()?>/static/images/avatar_1.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">John Doe</span>
-                                                <span class="subtitle">Lorem ipsum dolor sit.</span>
+                                                <span class="subtitle">老板喊你过去</span>
                                             </div>
                                         </a>
                                     </li>
@@ -90,7 +90,7 @@
                                             <div class="left-element"><img alt="Alice Smith" src="<?=base_url()?>/static/images/avatar_2.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">Alice Smith</span>
-                                                <span class="subtitle">Deserunt, mollitia?</span>
+                                                <span class="subtitle">老板要fire你</span>
                                             </div>
                                         </a>
                                     </li>
@@ -99,7 +99,7 @@
                                             <div class="left-element"><img alt="Klaus Wolf" src="<?=base_url()?>/static/images/avatar_3.jpg" /></div>
                                             <div class="text">
                                                 <span class="title">Klaus Wolf</span>
-                                                <span class="subtitle">Consectetur adipisicing elit.</span>
+                                                <span class="subtitle">我找不到xx的资料，发我一份</span>
                                             </div>
                                         </a>
                                     </li>
@@ -134,7 +134,7 @@
                     <span>4</span>
                     <div class="dropdown-box basic">
                         <div class="drop-header">
-                            <h3><i class="fa fa-bell-o" aria-hidden="true"></i> Notifications</h3>
+                            <h3><i class="fa fa-bell-o" aria-hidden="true"></i> 提醒</h3>
                             <span class="number">4</span>
                         </div>
                         <div class="drop-content">
@@ -144,7 +144,7 @@
                                         <a href="#">
                                             <div class="left-element"><i class="fa fa-warning color-warning"></i></div>
                                             <div class="text">
-                                                <span class="title">8 Bugs</span>
+                                                <span class="title">8 进度更新</span>
                                                 <span class="subtitle">reported today</span>
                                             </div>
                                         </a>
@@ -171,8 +171,8 @@
                                         <a href="#">
                                             <div class="left-element"><i class="fa fa-tasks color-success"></i></div>
                                             <div class="text">
-                                                <span class="title">14 Task</span>
-                                                <span class="subtitle">completed</span>
+                                                <span class="title">14 个项目</span>
+                                                <span class="subtitle">完成</span>
                                             </div>
                                         </a>
                                     </li>

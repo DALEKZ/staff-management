@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Helsinki</title>
+
     <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>/static/favicon/apple-icon-120x120.png">
     <link rel="icon" type="image/png" sizes="192x192" href="<?=base_url()?>/static/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>/static/favicon/favicon-32x32.png">
@@ -23,7 +24,7 @@
 
 <div class="wrap">
 
-<?php include 'header.php' ?>
+   <?php include 'header.php' ?>
 
     <div class="page-body">
         <div class="left-sidebar">
@@ -33,8 +34,8 @@
                     <span></span>
                 </div>
             </div>
-            <?php include 'left_nav.php' ?>
-            </div>
+             <?php include 'user_left.php' ?>
+                </div>
         </div>
        <div class="content">
             <div class="content-header">
@@ -45,60 +46,31 @@
                     </ul>
                 </div>
             </div>
-            <div class="row animated fadeInRight">
-                
-                <div class="col-sm-12">
-                    <h4 class="section-subtitle">
-                    <div class="panel">
-                        <div class="panel-content">
-                            <table id="responsive-table" class="data-table table table-striped table-hover responsive nowrap" cellspacing="0" width="100%">
-                                <thead>
-                                <tr>
-                                    <th>员工号</th>
-                                    <th>姓名</th>
-                                    <th>性别</th>
-                                    <th>职位</th>
-                                    <th>部门</th>
-                                    <th>工资</th>
-                                    <th>入职时间</th>
-                                    <th>操作</th>
 
-                                </tr>
-                                </thead>
-                                <tbody>
-
-                                <?php foreach ($staff as $row) { ?>
-                                    <tr>
-                                        <td><?php echo $row->eid; ?></td>
-                                        <td><?php echo $row->name ;?></td>
-                                        <td><?php echo $row->sex; ?></td>
-                                        <td><?php echo $row->p_name; ?></td>
-                                        <td><?php echo $row->d_name ;?></td>
-                                        <td><?php echo '￥'. $row->salary;?></td>
-                                        <td><?php echo $row->indate;?></td>
-                                        <td>
-                                            <div class="btn-group btn-group-xs">
-                                                <a class="btn btn-transparent" href="<?php echo 'index.php/Op_Controller/getprofile/'.$row->eid;?>"> <i class="fa fa-eye"></i>
-                                                </a>
-                                                <a class="btn btn-transparent" href="<?php echo 'index.php/Op_Controller/uform/'.$row->eid;?>"> <i class="fa fa-pencil"></i>
-                                                </a>
-                                                <a class="btn btn-transparent" href="<?php echo 'index.php/Op_Controller/delete/'.$row->eid;?>"><i class="fa fa-times"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php } ?>
-                            
-                                </tbody>
-                            </table>
+            <div class="panel-content">           
+                    <form>
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                         </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
                         </div>
-                    </div>
-                </div>
+                        <div class="form-group">
+                            <label for="question" class="control-label">内容</label>
+                            <textarea class="form-control" rows="3" id="question" placeholder="Write your question"></textarea>
+                          </div>
+                         <div class="form-group">
+                              <button type="submit" class="btn btn-primary">提交</button>
+                          </div>
+                      </form>
             </div>
+            
         </div>
-     
 
-    </div>
+
+  
 </div>
 
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>

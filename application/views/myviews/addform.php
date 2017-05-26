@@ -57,12 +57,21 @@
                     <div class="panel">
                         <div class="panel-content">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <form id="inline-validation" class="form-horizontal form-stripe" action="<?php echo site_url('Op_Controller/add'); ?>" method="POST">
+                                <div class="col-md-12">                                    
+                              
+                                    <form id="inline-validation" class="form-horizontal form-stripe" action="<?php if(isset($eid)) echo site_url('Op_Controller/updateSQL');else echo site_url('Op_Controller/add'); ?>" method="POST">
+                                        <div class="form-group">
+                                            <label for="name" class="col-sm-3 control-label">员工号<span class="required">*</span></label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="eid" name="eid" value=<?php if (isset($eid)) {echo $eid;}?> required>
+
+                                            </div>
+                                        </div>
                                         <div class="form-group">
                                             <label for="name" class="col-sm-3 control-label">姓名<span class="required">*</span></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="name" name="name" required>
+                                                <input type="text" class="form-control" id="name" name="name" value=<?php if (isset($eid)) {echo $name;}?> required>
+
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -70,12 +79,12 @@
                                             <div class="col-sm-5">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="sex" id="sex" value="男" checked>男
+                                                        <input type="radio" name="sex" id="sex" value="男" <?php if (isset($eid)&&$sex=='男') {echo 'checked';}?> >男
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="sex" id="sex" value="女">女
+                                                        <input type="radio" name="sex" id="sex" value="女"  <?php if (isset($eid)&&$sex=='女') {echo 'checked';}?>>女
                                                     </label>
                                                 </div>
                 
@@ -84,19 +93,19 @@
                                         <div class="form-group">
                                             <label for="email" class="col-sm-3 control-label">邮箱<span class="required">*</span></label>
                                             <div class="col-sm-6">
-                                                <input type="email" class="form-control" id="email" name="email" required>
+                                                <input type="email" class="form-control" id="email" name="email"  value=<?php if (isset($eid)) {echo $email;}?> required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="password" class="col-sm-3 control-label">联系电话<span class="required">*</span></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="phone" name="phone" required>
+                                                <input type="text" class="form-control" id="phone" name="phone"   value=<?php if (isset($eid)) {echo $phone;}?> required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="password" class="col-sm-3 control-label">年龄<span class="required">*</span></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="age" name="age" required>
+                                                <input type="text" class="form-control" id="age" name="age"  value=<?php if (isset($eid)) {echo $age;}?> required>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -104,27 +113,27 @@
                                                 <div class="col-sm-5">
                                                  <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="1"  onclick="switchItem('1')">董事会
+                                                        <input type="radio" name="department" id="department" value="1"  onclick="switchItem('1')" <?php if (isset($eid)&&$d_id==1) {echo 'checked';}?>>董事会
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="2"  onclick="switchItem('2')" >市场部
+                                                        <input type="radio" name="department" id="department" value="2"  onclick="switchItem('2')" <?php if (isset($eid)&&$d_id==2) {echo 'checked';}?>>市场部
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="3"  onclick="switchItem('3')">研发部
+                                                        <input type="radio" name="department" id="department" value="3"  onclick="switchItem('3')" <?php if (isset($eid)&&$d_id==3) {echo 'checked';}?>>研发部
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="4"  onclick="switchItem('4')">营销部
+                                                        <input type="radio" name="department" id="department" value="4"  onclick="switchItem('4')" <?php if (isset($eid)&&$d_id==4) {echo 'checked';}?>>营销部
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="department" id="department" value="5"  onclick="switchItem('5')">网络部
+                                                        <input type="radio" name="department" id="department" value="5"  onclick="switchItem('5')" <?php if (isset($eid)&&$d_id==5) {echo 'checked';}?>>网络部
                                                     </label>
                                                 </div>
                 
@@ -221,7 +230,7 @@
                                         <div class="form-group">
                                             <label for="age" class="col-sm-3 control-label">起薪<span class="required">*</span></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="salary" name="salary" required>
+                                                <input type="text" class="form-control" id="salary" name="salary" value=<?php if (isset($eid)) {echo $salary;}?> required>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -229,7 +238,7 @@
 
                                             <div class="input-group mt-sm mb-sm">
                                                 <span class="input-group-addon"><i class="fa fa-calendar-o"></i></span>
-                                                <input type="text" class="form-control" id="date-mask" placeholder="dd/mm/yyyy" name="indate">
+                                                <input type="text" class="form-control" id="date-mask" placeholder="dd/mm/yyyy" name="indate" value=<?php if (isset($eid)) {echo $indate;}?>>
                                             </div>
                                         </div>
                                        

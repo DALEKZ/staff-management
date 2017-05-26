@@ -24,6 +24,23 @@
 			return $query->row();
 		}
 
+		public function getAstaff($eid)
+		{
+			$query = $this->db->query('select employee.d_id,salary,indate, employee.eid,name,age,sex,d_name,p_name,phone,email,introduce from ((
+							employee inner join position  
+							on employee.pid=position.pid) 
+							inner join department on employee.d_id = department.d_id)
+							INNER JOIN info on employee.eid=info.eid 
+							where employee.eid='.$eid);
+			return $query->row();
+		}
+
+		public function getHeader($id)
+		{
+			$data = $this->db->query('select name,p_name from employee inner join position on employee.pid=position.pid where employee.eid='.$id->eid);
+			return $data->row();
+		}
+
 		
 
 	}

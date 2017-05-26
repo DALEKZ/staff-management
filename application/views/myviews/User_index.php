@@ -1,4 +1,3 @@
-
 <!doctype html>
 
 <html lang="en" class="fixed">
@@ -21,11 +20,18 @@
 
 <body>
 <div class="wrap">
-
-    <?php include 'header.php' ?>
-    <?php include 'left_nav.php' ?>
-
-           
+      <?php include 'header.php' ?>
+    <div class="page-body">
+        <div class="left-sidebar">
+            <div class="left-sidebar-header">
+                <div class="left-sidebar-title">导航</div>
+                <div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+                    <span></span>
+                </div>
+            </div>
+             <?php include 'user_left.php' ?>
+            </div>
+        </div>
         <div class="content">
             <div class="content-header">
                 <div class="leftside-content-header">
@@ -46,8 +52,8 @@
                                                 <span class="icon fa fa-globe color-darker-1"></span>
                                             </div>
                                             <div class="col-xs-8">
-                                                <h4 class="subtitle color-darker-1">员工数</h4>
-                                                <h1 class="title color-primary"><?php echo $noe->num ?></h1>
+                                                <h4 class="subtitle color-darker-1">项目数</h4>
+                                                <h1 class="title color-primary">2</h1>
                                             </div>
                                         </div>
                                     </div>
@@ -61,8 +67,8 @@
                                                 <span class="icon fa fa-user color-darker-2"></span>
                                             </div>
                                             <div class="col-xs-8">
-                                                <h4 class="subtitle color-darker-2">今年新入职人数</h4>
-                                                <h1 class="title color-w"> <?php echo $non->n_num ?></h1>
+                                                <h4 class="subtitle color-darker-2">完成项目数</h4>
+                                                <h1 class="title color-w"> 22</h1>
                                             </div>
                                         </div>
                                     </div>
@@ -76,7 +82,7 @@
                                                 <span class="icon fa fa-envelope color-lighter-1"></span>
                                             </div>
                                             <div class="col-xs-8">
-                                                <h4 class="subtitle color-lighter-1">当年离职总人数</h4>
+                                                <h4 class="subtitle color-lighter-1">未完成项目数</h4>
                                                 <h1 class="title color-light"> 124</h1>
                                             </div>
                                         </div>
@@ -143,122 +149,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-8">
-                            <div class="tabs mt-none">
-                                <ul class="nav nav-tabs nav-justified">
-                                    <li class="active"><a href="#home" data-toggle="tab">员工</a></li>
-                                    <li><a href="#profile" data-toggle="tab">销售</a></li>
-                                    <li><a href="#messages" data-toggle="tab">信息</a></li>
-                                    <li><a href="#settings" data-toggle="tab"><i class="fa fa-cog" aria-hidden="true"></i> 设置</a></li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane fade in active" id="home">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped table-hover">
-                                                <thead>
-                                                <tr>
-                                                    <th>员工号</th>
-                                                    <th>姓名</th>
-                                                    <th>性别</th>
-                                                    <th>职位</th>
-                                                    <th>部门</th>
-                                                    <th>年龄</th>
-                                                    <th>入职时间</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <?php foreach ($staff as $row) { ?>
-                                                <tr>
-                                                    <td><?php echo $row->eid; ?></td>
-                                                    <td><?php echo $row->name ;?></td>
-                                                    <td><?php echo $row->sex; ?></td>
-                                                    <td><?php echo $row->p_name; ?></td>
-                                                    <td><?php echo $row->d_name ;?></td>
-                                                    <td><?php echo $row->age;?></td>
-                                                    <td><?php echo $row->indate;?></td>
-
-                                                </tr>
-                                                <?php } ?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="profile">
-                                        <p><b>Profile</b> content</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae tellus tincidunt, mattis odio eu, accumsan quam. Duis ultricies, erat nec suscipit mattis, risus est efficitur enim, sed finibus lacus nisi et mauris. Ut sed accumsan ipsum. Aliquam vel nibh et turpis euismod porttitor. In diam odio, cursus eget faucibus quis, efficitur id erat. Aliquam euismod in justo sit amet ornare. Quisque eu fringilla libero. Donec iaculis sit amet nibh non laoreet.
-                                        </p>
-                                    </div>
-                                    <div class="tab-pane fade" id="messages">
-                                        <p><b>Message</b> content</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae tellus tincidunt, mattis odio eu, accumsan quam. Duis ultricies, erat nec suscipit mattis, risus est efficitur enim, sed finibus lacus nisi et mauris. Ut sed accumsan ipsum. Aliquam vel nibh et turpis euismod porttitor. In diam odio, cursus eget faucibus quis, efficitur id erat. Aliquam euismod in justo sit amet ornare. Quisque eu fringilla libero. Donec iaculis sit amet nibh non laoreet.
-                                        </p>
-                                    </div>
-                                    <div class="tab-pane fade" id="settings">
-                                        <p><b>Settings</b> content</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae tellus tincidunt, mattis odio eu, accumsan quam. Duis ultricies, erat nec suscipit mattis, risus est efficitur enim, sed finibus lacus nisi et mauris. Ut sed accumsan ipsum. Aliquam vel nibh et turpis euismod porttitor. In diam odio, cursus eget faucibus quis, efficitur id erat. Aliquam euismod in justo sit amet ornare. Quisque eu fringilla libero. Donec iaculis sit amet nibh non laoreet.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4">
-                            <div class="panel">
-                                <div class="panel-content">
-                                    <h5><b>Lorem ipsum dolor sit</b></h5>
-                                    <p>Dolor sit amet <span class="highlight">consectetur</span> erte</p>
-                                    <canvas id="pie-chart" width="400" height="260"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-8">
-                            <div class=" gallery-wrap">
-                                <div class="row">
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/images/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="first photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/images/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="second photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/images/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="third photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/images/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="fourth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/images/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="fifth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/images/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="sixth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/mages/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="seventh photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <a href="<?=base_url()?>/static/images/helsinki-lg.jpg" title="By John Doe">
-                                            <img alt="eighth photo" src="<?=base_url()?>/static/images/helsinki.jpg" class="img-responsive">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="col-sm-12 col-lg-3">
                     <div class="timeline">
@@ -321,7 +214,6 @@
 <script src="<?=base_url()?>/static/vendor/chart-js/chart.min.js"></script>
 <script src="<?=base_url()?>/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="<?=base_url()?>/static/javascripts/examples/dashboard.js"></script>
-<?php var_dump(isset( $_SESSION) );   ?>
 </body>
 
 </html>

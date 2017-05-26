@@ -28,32 +28,35 @@
     <div class="page-body">
         <div class="left-sidebar">
             <div class="left-sidebar-header">
-                <div class="left-sidebar-title">导航</div>
+                <div class="left-sidebar-title">Navigation</div>
                 <div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
                     <span></span>
                 </div>
             </div>
-                <?php include 'left_nav.php' ?>
+            <?php include 'left_nav.php' ?>
             </div>
         </div>
         <div class="content">
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-copy" aria-hidden="true"></i><a href="#">档案</a></li>
-                        <li><a>员工信息档案</a></li>
+                        <li><i class="fa fa-table" aria-hidden="true"></i><a href="#">Tables</a></li>
+                        <li><a>Responsive</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
+         
+
+            
+            <dixv class="row">
                 <div class="col-md-6 col-lg-4">
                     <div>
                         <div class="profile-photo">
                             <img alt="Jane Doe" src="<?=base_url()?>/static/images/user-avatar.jpg" />
                         </div>
                         <div class="user-header-info">
-                            <h2 class="user-name"><?php echo $name?></h2>
-                            <h5 class="user-position"><?php echo $d_name.",  ".$p_name?></h5>
+                            <h2 class="user-name"><?php $profile[1]->name?></h2>
+                            <h5 class="user-position"><?php echo $profile[1]->d_name.",  ".$profile[1]->p_name?></h5>
                             <div class="user-social-media">
                                 <span class="text-lg"><a href="#" class="fa fa-twitter-square"></a> <a href="#" class="fa fa-facebook-square"></a> <a href="#" class="fa fa-linkedin-square"></a> <a href="#" class="fa fa-google-plus-square"></a></span>
                             </div>
@@ -63,10 +66,10 @@
                         <div class="panel-content">
                             <h4 class=""><b>个人信息</b></h4>
                             <ul class="user-contact-info ph-sm">
-                                <li><b><i class="color-primary mr-sm fa fa-envelope"></i></b> <?php echo $email?></li>
-                                <li><b><i class="color-primary mr-sm fa fa-phone"></i></b><?php echo $phone?></li>
-                                <li><b><i class="color-primary mr-sm fa fa-globe"></i></b><?php echo $sex.",  ".$age?></li>
-                                <li class="mt-sm"><?php echo $introduce?></li>
+                                <li><b><i class="color-primary mr-sm fa fa-envelope"></i></b> <?php echo $profile[1]->email?></li>
+                                <li><b><i class="color-primary mr-sm fa fa-phone"></i></b><?php echo $profile[1]->phone?></li>
+                                <li><b><i class="color-primary mr-sm fa fa-globe"></i></b><?php echo $profile[1]->sex.",  ".$profile[1]->age?></li>
+                                <li class="mt-sm"><?php echo $profile[1]->introduce?></li>
                             </ul>
                         </div>
                     </div>
@@ -87,7 +90,7 @@
                                         <a href="#">
                                             <div class="left-element"><i class="fa fa-clock-o color-warning"></i></div>
                                             <div class="text">
-                                                <span class="title">3 个项目</span>
+                                                <span class="title">1</span>
                                                 <span class="subtitle">进行中</span>
                                             </div>
                                         </a>
@@ -107,51 +110,22 @@
                 </div>
                 <div class="col-md-6 col-lg-8">
                     <div class="timeline animated fadeInUp">
+                        <?php foreach ($profile as $row) { ?>
                         <div class="timeline-box">
                             <div class="timeline-icon bg-primary">
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="timeline-content">
-                                <h4 class="tl-title">项目1进度</h4> 可以有普通员工界面，根据他的报告，存入数据库自动在管理员此处更信
-                            </div>
+                                <h4 class="tl-title"><?php echo $row->pg_name?></h4> <?php echo $row->brief ?>
+                               
+                             </div>
                             <div class="timeline-footer">
-                                <span>Today. 14:25</span>
+                                <span><?php echo $row->start_time ?></span>
                             </div>
+                            
+                           </div>
+                           <?php } ?>
                         </div>
-                        <div class="timeline-box">
-                            <div class="timeline-icon bg-primary">
-                                <i class="fa fa-tasks"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h4 class="tl-title">c项目2进度 </h4> Lorem ipsum dolor sit amet. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
-                            </div>
-                            <div class="timeline-footer">
-                                <span>Today. 10:55</span>
-                            </div>
-                        </div>
-                        <div class="timeline-box">
-                            <div class="timeline-icon bg-primary">
-                                <i class="fa fa-file"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h4 class="tl-title">I项目3进度</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
-                            </div>
-                            <div class="timeline-footer">
-                                <span>Today. 9:20</span>
-                            </div>
-                        </div>
-                        <div class="timeline-box">
-                            <div class="timeline-icon bg-primary">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h4 class="tl-title">Lorem ipsum dolor sit</h4> Lorem ipsum dolor sit amet Consequatur distinctio illo impedit iusto minima nisi quo tempora ut!
-                            </div>
-                            <div class="timeline-footer">
-                                <span>Yesteday. 16:30</span>
-                            </div>
-                        </div>
-                    </div>
                     <div class=" gallery-wrap">
                         <div class="row">
                             <div class="col-xs-6 col-md-3">
@@ -200,9 +174,7 @@
             </div>
         </div>
         
-        <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
-    </div>
-</div>
+
 <script src="<?=base_url()?>/static/javascripts/jquery.min.js"></script>
 <script src="<?=base_url()?>/static/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?=base_url()?>/static/vendor/nano-scroller/nano-scroller.js"></script>

@@ -22,6 +22,7 @@
      
 
 <div class="wrap">
+<?php include 'header.php' ?>
     <div class="page-header">
         <div class="leftside-header">
             <div class="logo">

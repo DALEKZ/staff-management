@@ -37,11 +37,15 @@
 
 		public function getHeader($id)
 		{
-			$data = $this->db->query('select name,p_name from employee inner join position on employee.pid=position.pid where employee.eid='.$id->eid);
+			$data = $this->db->query('select name,p_name ,img from employee inner join position on employee.pid=position.pid where employee.eid='.$id->eid);
 			return $data->row();
 		}
 
-		
+		public function getupdate()
+		{
+			$data = $this->db->query('select  employee.eid as eid,name,pg_name from employee inner join program on employee.eid=program.eid where update_bit=1');
+			return $data->result();
+		}
 
 	}
  ?>

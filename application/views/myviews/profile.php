@@ -55,8 +55,8 @@
                             <img alt="Jane Doe" src="<?=base_url()?>/static/images/user-avatar.jpg" />
                         </div>
                         <div class="user-header-info">
-                            <h2 class="user-name"><?php $profile[1]->name?></h2>
-                            <h5 class="user-position"><?php echo $profile[1]->d_name.",  ".$profile[1]->p_name?></h5>
+                            <h2 class="user-name"><?php $profile[0]->name?></h2>
+                            <h5 class="user-position"><?php echo $profile[0]->d_name.",  ".$profile[0]->p_name?></h5>
                             <div class="user-social-media">
                                 <span class="text-lg"><a href="#" class="fa fa-twitter-square"></a> <a href="#" class="fa fa-facebook-square"></a> <a href="#" class="fa fa-linkedin-square"></a> <a href="#" class="fa fa-google-plus-square"></a></span>
                             </div>
@@ -66,10 +66,10 @@
                         <div class="panel-content">
                             <h4 class=""><b>个人信息</b></h4>
                             <ul class="user-contact-info ph-sm">
-                                <li><b><i class="color-primary mr-sm fa fa-envelope"></i></b> <?php echo $profile[1]->email?></li>
-                                <li><b><i class="color-primary mr-sm fa fa-phone"></i></b><?php echo $profile[1]->phone?></li>
-                                <li><b><i class="color-primary mr-sm fa fa-globe"></i></b><?php echo $profile[1]->sex.",  ".$profile[1]->age?></li>
-                                <li class="mt-sm"><?php echo $profile[1]->introduce?></li>
+                                <li><b><i class="color-primary mr-sm fa fa-envelope"></i></b> <?php echo $profile[0]->email?></li>
+                                <li><b><i class="color-primary mr-sm fa fa-phone"></i></b><?php echo $profile[0]->phone?></li>
+                                <li><b><i class="color-primary mr-sm fa fa-globe"></i></b><?php echo $profile[0]->sex.",  ".$profile[0]->age?></li>
+                                <li class="mt-sm"><?php echo $profile[0]->introduce?></li>
                             </ul>
                         </div>
                     </div>

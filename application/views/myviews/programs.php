@@ -55,7 +55,7 @@
                                 <br>
                                 <br>
                                
-                                <a href="index.php/UserController/updateview/<?php echo $row->eid ?>"><button class="btn btn-wide btn-info">修改</button></a>
+                                <a href="index.php/UserController/updateview/<?php echo $row->pr_id ?>"><button class="btn btn-wide btn-info">修改</button></a>
                              </div>
                             <div class="timeline-footer">
                                 <span><?php echo $row->start_time ?></span>

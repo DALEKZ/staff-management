@@ -37,15 +37,15 @@ $(function () {
 
         });
     });
-    $('#pnotify-basic-primary').on('click',function () {
+ 
         new PNotify({
-            title: 'Primary',
-            text: 'I\'m a primary color notice!',
+            title: 'Primaary',
+            text: 'test!!!!!',
             type: 'custom',
             addclass: 'pnotify-primary',
             icon: "fa fa-user"
         });
-    });
+  
     $('#pnotify-basic-dark').on('click',function () {
         new PNotify({
             title: 'Dark',
@@ -212,7 +212,6 @@ $(function () {
 
         });
     });
-    $('#pnotify-topbar-primary').on('click',function () {
         new PNotify({
             title: 'Topbar Primary',
             text: 'I\'m a topbar primary color notice!',
@@ -224,7 +223,7 @@ $(function () {
             stack: stack_bar_top
 
 
-        });
+    
     });
     $('#pnotify-topbar-dark').on('click',function () {
         new PNotify({

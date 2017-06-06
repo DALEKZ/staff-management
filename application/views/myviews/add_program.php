@@ -46,7 +46,7 @@
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
                         <li><i class="fa fa-columns" aria-hidden="true"></i><a href="#">表单</a></li>
-                        <li><a>项目更新</a></li>
+                        <li><a>添加项目</li>
                     </ul>
                 </div>
             </div>
@@ -57,12 +57,12 @@
                         <div class="panel-content">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form id="inline-validation" class="form-horizontal form-stripe" action="<?php echo site_url('UserController/updateprogram/'.$prid); ?>" method="POST">
+                                    <form id="inline-validation" class="form-horizontal form-stripe" action="<?php echo site_url('UserController/addprogram'); ?>" method="POST">
                                         <div class="form-group">
                                             <label for="name" class="col-sm-3 control-label">项目名<span class="required">*</span></label>
                                             <div class="col-sm-6">
                                                 <input type="text" class="form-control" id="name" name="pg_name" required>
-                                                <input type="hidden" id="update_bit" name="update_bit" value="1" />
+                                                <input type="hidden" id="update" name="update" value="1" />
                                             </div>
                                         </div>
                                          

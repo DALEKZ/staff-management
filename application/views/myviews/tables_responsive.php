@@ -40,7 +40,7 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-table" aria-hidden="true"></i><a href="#">Tables</a></li>
+                        <li><i class="fa fa-table" aria-hidden="true"></i><a href="#">操作表</a></li>
                         <li><a>Responsive</a></li>
                     </ul>
                 </div>

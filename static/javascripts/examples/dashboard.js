@@ -42,19 +42,9 @@ $(function () {
                 pointBackgroundColor: "#fff",
                 pointHoverBackgroundColor: "343d3e",
                 pointHoverBorderColor: "rgba(220,220,220,1)",
-                data: [12, 13, 11, 6, 9, 12,2,4,5,2],
-            },
-            {
-                label: "离职人数",
-                fill: true,
-                backgroundColor: "rgba(175, 175, 175, 0.26)",
-                borderColor: "rgba(175, 175, 175, 0.26)",
-                pointBorderColor: "rgba(75,192,192,1)",
-                pointBackgroundColor: "#fff",
-                pointHoverBackgroundColor: "#343d3e",
-                pointHoverBorderColor: "rgba(220,220,220,1)",
-                data: [14, 6, 9, 13, 12, 16,12,3,4,2],
+                data: [12p, 13, 11, 6, 9, 12,2,4,5,21]
             }
+            
         ],
         options: {
             scales: {
